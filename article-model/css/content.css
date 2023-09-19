@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: "logo-font";
+    src: url(../../resources/font/Blenda\ Script.otf);
+}
+button:hover
+{
+    cursor: pointer;
+}
+article
+{
+    font-family: 'Poppins';
+    color: white;
+}
+.banner
+{
+    background-color: cyan;
+    width: 100%;
+    height: 230px;
+}
+main
+{
+    margin-inline: 10%;
+    display: flex;
+    min-height: 100vh;
+}
+main .content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    float: right;
+    width: 100vw;
+    border-radius: 30px;
+}
+.box
+{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin-inline: 20px;
+}
+.box1
+{
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    margin-left: 30px;
+    height: 95%;
+    width: 30%;
+}
+.box1 .imageFrame
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.box1 .imageFrame img
+{
+    border-radius: 20px;
+    width: 85%;
+}
+.box1 .group
+{
+    /* background-color:red; */
+    color: #b0bac5;
+    font-weight: 700;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+}
+.box1 .group .group-type
+{
+    /* background-color: red; */
+    margin-top: 15px;
+    display: block;
+    height: fit-content;
+    padding-inline: 20px;
+}
+.box1 .group .Tags
+{
+    padding-top: 5px;
+}
+.box1 .group .group-type span 
+{
+    padding-inline: 5px;
+}
