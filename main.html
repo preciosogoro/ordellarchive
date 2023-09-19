@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="body.css">
+    <link href='https://fonts.googleapis.com/css?family=Leckerli One' rel='stylesheet'>
+    <title>Ordell Archive</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="Logo">
+                <a href="#">ordell</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="group">
+            <div class="title">
+                <h1>archives</h1>
+            </div>
+            <main class="searchContainer" id="searchContainer">
+                <form autocomplete="off" method="get" class="search-bar" id="search-bar" onsubmit=get_action(this)>
+                    <input type="text" name="" placeholder="search..." id="searchInput" class="search-input">  
+                    <button class="searchButton"><img src="resources/image/searchButton.svg" alt="search"></button>     
+                </form>
+                <nav class="search-results" id="searchResults">
+                    <!-- <ul class="results-list">
+                        <li class="content">rom hack</li>
+                        <li class="content">pokemon</li>
+                        <li class="content">download</li>
+                        <li class="content">ordell</li>
+                        <li class="content">website</li>
+                        <li class="content">how to download</li>
+                    </ul> -->
+                </nav>
+            </main>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        function get_action(form) {
+            form.action = 'http://127.0.0.1:5500/Ordell%20Archive/article-model/' + document.getElementById("searchInput").value + ".html";
+        }
+    </script>
+</body>
+</html
