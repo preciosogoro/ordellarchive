@@ -3,8 +3,9 @@ var searchResultList = document.querySelector(".search-results-list")
 let availableKeywords = [
   "Pokemon Legend Arceus",
   "Pokemon Scarlet",
-  "Pokemon Violet"
-
+  "Pokemon Violet",
+  "Soal BTA PK & PM Bab 1",
+  "Soal BTA Matematika Bab 1"
 ];
 
 const searchResult = document.querySelector(".search-results"); 
@@ -15,7 +16,7 @@ inputBox.onkeyup = function() {
   let input = inputBox.value;
   if(input.length) {
       result = availableKeywords.filter((keyword)=>{
-        return keyword.toLowerCase().includes(input.toLowerCase());
+        return keyword.toLowerCase().replace('amp', '').includes(input.toLowerCase());
       });
       // console.log(result)
   }
@@ -45,7 +46,8 @@ const searchContainer = document.getElementById('searchContainer');
 function selectInput(list) {
   // searchContainer.focus();
   inputBox.focus();
-  inputBox.value = list.innerHTML;
+  inputBox.value = list.innerHTML.replace('amp;', '');
   searchResult.innerHTML = '';
 }
+
 
