@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-}
-@font-face {
-    font-family: "logo-font";
-    src: url(resources/font/Blenda\ Script.otf);
-}
-body{
     font-family: "logo-font";
     background-color: #141414;
 }
@@ -20,7 +10,7 @@ header{
 }
 header .content{
     padding: 30px;
-    padding-inline: 80px;
+    padding-inline: clamp(1rem, 7.5vw, 5rem);
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -63,6 +53,10 @@ header .content .Logo:hover
     transition: 0.5s;
     text-shadow: 0 0 6px white;
 }
+
+
+
+
 
 
 
